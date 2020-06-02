@@ -3,6 +3,10 @@ AudioVideoRecordingSample
 
 Simultaneous audio and video recording sample using MediaCodec/MediaMuxer
 
+Pass build by update build.gradle for study. Download the common lib instead of on line compile.
+
+Thanks for original author.
+
 Copyright (c) 2014-2016 saki t_saki@serenegiant.com
 
  Licensed under the Apache License, Version 2.0 (the "License");

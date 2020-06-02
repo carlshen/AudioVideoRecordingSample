@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+//apply plugin: 'kotlin-android'
+//apply plugin: 'kotlin-kapt'
+//apply plugin: 'kotlin-android-extensions'
 
 android {
 	compileSdkVersion versionCompiler
@@ -11,7 +14,7 @@ android {
 
     defaultConfig {
         applicationId "com.serenegiant.audiovideosample"
-        minSdkVersion 18
+        minSdkVersion 19
 		targetSdkVersion versionTarget
 		versionCode versionCodeNum
 		versionName versionNameString
@@ -31,6 +34,7 @@ android {
 
 dependencies {
 	implementation fileTree(dir: 'libs', include: ['*.jar'])
+	implementation fileTree(dir: 'libs', include: ['*.aar'])
 
 	testImplementation 'junit:junit:4.12'
 	androidTestImplementation 'androidx.test:runner:1.2.0'
@@ -39,5 +43,6 @@ dependencies {
 	implementation "androidx.appcompat:appcompat:${androidXVersion}"
 	implementation "androidx.legacy:legacy-support-v4:${androidXLegacyV4}"
 
-	implementation "com.serenegiant:common:${commonLibVersion}"
+	implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//	implementation "com.serenegiant:common:${commonLibVersion}"
 }
